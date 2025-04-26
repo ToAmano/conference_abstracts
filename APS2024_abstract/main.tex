@@ -1,0 +1,113 @@
+% Time-stamp: <2023-10-19 02:00:46 amano>
+
+\documentclass[11pt]{article}
+% \documentstyle[11pt]{article}
+
+\pagestyle{empty}
+\usepackage{color}
+\parindent=0pt
+\parskip=5pt
+\begin{document}
+
+% -------------------------------------------
+% Comments
+% -------------------------------------------
+
+% Note that the actual abstract submission process must now be done
+% by filling out a web form at
+% 
+%    http://abs.aps.org/
+% 
+% However, it is recommended to prepare your abstract using this
+% template, so that all co-authors can agree on all the details.
+% Then, when the time comes to submit the abstract, you will have
+% just have to cut and paste the information from this abstract
+% into the APS web page.
+% 
+% Note that it is permissible to use latex constructs in author,
+% title, and abstract entries when filling the web form.
+%
+% This version of the template is appropriate for contributed
+% abstracts.  Invited abstracts can be up to 2000 characters
+% in length, so the size settings may not be right for them.
+%
+% For pointers about the process of submitting the abstract to the
+% APS web site, see http://www.physics.rutgers.edu/~dhv/aps_abstracts/ .
+
+
+% -------------------------------------------
+% General info and title
+% -------------------------------------------
+
+SORTING CATEGORY: 16 General Theory, Computational Physics (DCOMP)
+
+SUB CATEGORY TYPE: 16.01.04 Machine Learning for Electronic Structure, Properties and Dynamics of Molecules and Materials
+
+TITLE: First-principles study of THz dielectric properties of molecular liquids with a machine learning model for dipole moments
+
+% TITLENOTE:
+
+% -------------------------------------------
+% Author 1
+% -------------------------------------------
+
+NAME: Tomohito Amano, Tamio Yamazaki, Shinji Tsuneyuki
+
+% EMAIL: student@physics.rutgers.edu
+
+% AFFIL: 
+
+% Note: Affiliations do NOT need to include the address information.
+%       I suggest to keep it short.  If you wish, it could be, e.g.,
+%       "Department of Physics and Astronomy, Rutgers University"
+%       but the shorter the better.
+
+% Note: In the case of multiple authors with the same affiliation,
+%       the affiliation should be left blank except for the last
+%       author of the series.  When it comes time to do the actual
+%       web submission, if you click "Same as Submitter" to fill
+%       out the information for the first author, you might have to
+%       erase the Affiliation information if the second author is
+%       at the same institution.
+
+% -------------------------------------------
+% Author 2 (repeat as needed for Author 3 etc)
+% -------------------------------------------
+
+% NAME: David Vanderbilt
+
+% EMAIL: dhv@physics.rutgers.edu
+
+% AFFIL: Rutgers University
+
+% -------------------------------------------
+% Grant acknowledgment
+% -------------------------------------------
+
+% This is NOT counted against the length limit.  If you include
+% it, it will be formatted as Reference 1; if you also include
+% footnotes (below), these will be Reference 2 etc.
+
+% GRANT: Supported by NSF Grant DMR-14-08838.
+
+% -------------------------------------------
+ABSTRACT:
+% -------------------------------------------
+
+% Here is a dummy abstract.  Note that LaTex notations (e.g,
+% equations like $x^y$ and special characters as in Schr\"odinger)
+% are allowed; they are also allowed in title and author names.
+% Citations can also be added using the footnote method
+% like this.\footnote{M. Self, M. Friend and M. Adviser,
+% PRB {\bf 110}, 123456 (2014).}
+% Paragraph breaks are not allowed.  There is a {\bf firm length limit of
+% 1300 characters} which is counted by the number of characters in
+% the text portion of the abstract, that is, in this paragraph.
+% Unfortunately, LaTeX notations count by the input, so that
+% \$$\backslash$epsilon\$ counts as 10 characters, not 1.
+
+% https://tex.stackexchange.com/questions/28465/multiple-footnotes-at-one-point
+
+The dielectric response of materials in the THz region has been studied extensively in recent years due to improvements in experimental techniques and increased industrial interest. Theoretically, the dielectric response is calculated
+ from dipole moments collected along a molecular dynamics trajectory. Therefore, it is necessary not only to get accurate trajectories but also to calculate dipole moments precisely \footnote{C. C. Wang, J. Y. Tan, and L. H. Liu, AIP Advances 7, 035115 (2017).}. Recently, machine learning of molecular dipole moments has been studied using the centroid of Wannier functions calculated from first principles\footnote{ A. Krishnamoorthy, K. Nomura, N. Baradwaj et al., Phys. Rev. Lett. 126, 216403 (2021).}$^{,}$\footnote{ L. Zhang, M. Chen, X. Wu et al., Phys. Rev. B 102, 041121 (2020).}. We have constructed a versatile machine learning model of dipole moments applicable to molecular liquids. We assigned Wannier functions to chemical bonds between atoms and used deep neural networks to predict the position of the Wannier function for each bond, which is applicable to complex materials. We applied our method to caluculationg the dielectric function of liquid alcohols and obtained results that agreed well with the experimental ones.
+\end{document}
